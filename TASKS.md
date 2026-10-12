@@ -11,7 +11,7 @@
 - Audience / safety: family; appropriate environmental messaging without distress.
 
 ## Dependency and release gates
-- **NO branded-game code/assets or Codex implementation until** BOTH `Sekiph82/MATCH3_ENGINE` ENG-M12 final release audit PASS and `Sekiph82/Match3-Level-Factory` LFX-M11 final audit PASS, unless owner explicitly revises gate.
+- **NO branded-game code/assets or Codex implementation until** BOTH `Sekiph82/MATCH3_ENGINE` ENG-M24 final release audit PASS and `Sekiph82/Match3-Level-Factory` LFX-M11 final audit PASS, unless owner explicitly revises gate.
 - Keep Match3-SDK as shared Unity package via ENGINE. No second match algorithm, custom gravity or special-combination solver. All five games use identical level JSON/world/chapter/stars/tasks/economy/save/remote-update contracts.
 - First 3 early-level intents are inspired by Daltonbr/Match3, whose repo does not currently establish permission for code/asset reuse. Independently create levels using our SDK-based runtime. Scene files are NOT imported.
 - Chapter/story milestones use shared abstract `ProgressAction`; theme-specific scene/character animations belong only in this repo.
@@ -175,7 +175,7 @@
 - [ ] **COR-G10-008 Device-based audit** `PLANNED/GATED`. **Implementation deliverable:** Reported results must come from real test devices or explicitly identify simulator-only gaps.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 **Gate COR-G10:** All child tasks independently audited, all findings resolved and owner visuals approved where requested.
 
-### COR-G11 | Store publishing, monitoring and first content season
+### COR-G11 | Store submission rehearsal and first content season
 **State: PLANNED / GATED by engine + factory release. Closure requires independent ChatGPT audit and evidence in Drive.**
 
 - [ ] **COR-G11-001 Independent legal signoff** `PLANNED/GATED`. **Implementation deliverable:** Original/cleared brand art, sounds, fonts, terms, credits and SDK attribution.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
@@ -185,8 +185,24 @@
 - [ ] **COR-G11-005 Season release packaging** `PLANNED/GATED`. **Implementation deliverable:** Initial audited levels and art staged, immutable content pack and rollback plan.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **COR-G11-006 Store submission rehearsal** `PLANNED/GATED`. **Implementation deliverable:** Full test track/TestFlight review of onboarding, offline, patch, progress and purchases if enabled.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 - [ ] **COR-G11-007 Owner final acceptance** `PLANNED/GATED`. **Implementation deliverable:** Explicit PASS for tutorial, map, 5-game engine parity and creative identity.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
-- [ ] **COR-G11-008 v1 launch gate** `PLANNED/GATED`. **Implementation deliverable:** Release tag only after source/tests/evidence/review PASS and store approvals; no fictitious launch claim.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
+- [ ] **COR-G11-008 release-candidate gate** `PLANNED/GATED`. **Implementation deliverable:** Release tag only after source/tests/evidence/review PASS and store approvals; no fictitious launch claim.. **Acceptance:** title-specific smoke/regression in Unity 6.6, no divergence from engine's rules, version/commit identification, matching Level Factory schema where applicable; positive/negative tests and Drive-linked audit proof.
 **Gate COR-G11:** All child tasks independently audited, all findings resolved and owner visuals approved where requested.
+
+
+### COR-G12 | Commercial adapters, consent, store readiness and final ship gate
+**State: PLANNED / GATED. Prerequisites: ENGINE ENG-M24 PASS, Factory LFX-M11 PASS, and game G00–G11 independent sign-offs. Business accounts and money-bearing operations require owner authorization.**
+
+- [ ] **COR-G12-001 Store SDK configuration** `PLANNED/GATED`. **Deliverable and acceptance:** Create game-specific iOS/Android identifiers, store account mappings and SKU/product configuration; pinned optional commerce adapters only, not cloned motor. **Proof:** provider/version pin, positive/negative sandbox device tests, privacy/age assertions, SHA + GitHub commit, Drive Codex log/audit evidence and owner approval for production.
+- [ ] **COR-G12-002 Monetization eligibility decision** `PLANNED/GATED`. **Deliverable and acceptance:** Family-oriented marine restoration. Adult/general-audience monetization ONLY after age/category confirmation; no ads shown to underage audiences by default. **Proof:** provider/version pin, positive/negative sandbox device tests, privacy/age assertions, SHA + GitHub commit, Drive Codex log/audit evidence and owner approval for production.
+- [ ] **COR-G12-003 Rewarded advertisement placements** `PLANNED/GATED`. **Deliverable and acceptance:** Configure approved opt-in rewarded placements and per-game caps and consent; no interstitial mid-game, no double grants. **Proof:** provider/version pin, positive/negative sandbox device tests, privacy/age assertions, SHA + GitHub commit, Drive Codex log/audit evidence and owner approval for production.
+- [ ] **COR-G12-004 IAP catalog and UI** `PLANNED/GATED`. **Deliverable and acceptance:** Localize coin/boost/no-ads product catalog and restore UI; show Apple/Google store-authoritative price and product terms. **Proof:** provider/version pin, positive/negative sandbox device tests, privacy/age assertions, SHA + GitHub commit, Drive Codex log/audit evidence and owner approval for production.
+- [ ] **COR-G12-005 Transactional purchase verification** `PLANNED/GATED`. **Deliverable and acceptance:** Use shared server validation and exactly-once fulfillment; test refund, pending, Ask-to-Buy/deferred and restore on installed builds. **Proof:** provider/version pin, positive/negative sandbox device tests, privacy/age assertions, SHA + GitHub commit, Drive Codex log/audit evidence and owner approval for production.
+- [ ] **COR-G12-006 Analytics and attribution policy** `PLANNED/GATED`. **Deliverable and acceptance:** Configure privacy-aware game-specific funnel dashboards, attribution only with valid consent and region/platform constraints. **Proof:** provider/version pin, positive/negative sandbox device tests, privacy/age assertions, SHA + GitHub commit, Drive Codex log/audit evidence and owner approval for production.
+- [ ] **COR-G12-007 Cloud save and guest identity** `PLANNED/GATED`. **Deliverable and acceptance:** Verify guest/offline progress, optional account upgrade (when permitted), save restore and purchase entitlements across iPhone/Android without cross-title leakage. **Proof:** provider/version pin, positive/negative sandbox device tests, privacy/age assertions, SHA + GitHub commit, Drive Codex log/audit evidence and owner approval for production.
+- [ ] **COR-G12-008 LiveOps and controlled offers** `PLANNED/GATED`. **Deliverable and acceptance:** Use marine-themed reward placements without interrupting reef restoration. All remote offer/world-event configurations must be validated, age-safe, owner-approved and rollback-capable. **Proof:** provider/version pin, positive/negative sandbox device tests, privacy/age assertions, SHA + GitHub commit, Drive Codex log/audit evidence and owner approval for production.
+- [ ] **COR-G12-009 Support/legal/store declarations** `PLANNED/GATED`. **Deliverable and acceptance:** Provide title privacy/support URL, child/family policy and age rating, parental gate where applicable; review SDK privacy manifest and Android Data Safety. **Proof:** provider/version pin, positive/negative sandbox device tests, privacy/age assertions, SHA + GitHub commit, Drive Codex log/audit evidence and owner approval for production.
+- [ ] **COR-G12-010 Real package and production readiness** `PLANNED/GATED`. **Deliverable and acceptance:** Test real Android AAB/APK and iOS IPA, payments/ad flags, expected provider SDK inclusion/exclusion, TestFlight/Play internal tracks, R2 update and rollback; owner signs final ship gate. **Proof:** provider/version pin, positive/negative sandbox device tests, privacy/age assertions, SHA + GitHub commit, Drive Codex log/audit evidence and owner approval for production.
+**COR-G12 closure:** all 10 tasks audited, permitted integrations demonstrated, child policy enforced, final store submission separately approved.
 
 ## Explicit not-in-scope
 - Matching symbols restores habitats; do not depict injuring actual animals.
@@ -196,4 +212,4 @@
 ## First eligible handoff
 - Only AFTER ENGINE and FACTORY v1.0 PASS: prepare Drive prompt + audit criteria for COR-G00-001..008, then delegate implementation to Codex.
 
-_Detailed plan: 12 milestones, 101 numbered tasks. Zero tasks closed at creation._
+_Detailed plan: 13 milestones, 111 numbered tasks. Zero tasks closed at creation. Engine commercial v1.0 gate is ENG-M24._
