@@ -237,7 +237,7 @@
 
 
 ### COR-G12 | Commercial adapters, consent, store readiness and final ship gate
-**State: PLANNED / GATED. Prerequisites: ENGINE ENG-M24 PASS, Factory LFX-M14 PASS, and game G00–G11 independent sign-offs. Business accounts and money-bearing operations require owner authorization.**
+**State: PLANNED / GATED. Prerequisites: ENGINE ENG-M24 PASS, Level Factory LFX-M14 PASS, Visual-UI-Factory VUF-M11 PASS, and game G00–G11 independent sign-offs. Business accounts and money-bearing operations require owner authorization.**
 
 - [ ] **COR-G12-001 Store SDK configuration** `PLANNED/GATED`. **Deliverable and acceptance:** Create game-specific iOS/Android identifiers, store account mappings and SKU/product configuration; pinned optional commerce adapters only, not cloned motor. **Proof:** provider/version pin, positive/negative sandbox device tests, privacy/age assertions, SHA + GitHub commit, Drive Codex log/audit evidence and owner approval for production.
 - [ ] **COR-G12-002 Monetization eligibility decision** `PLANNED/GATED`. **Deliverable and acceptance:** Family-oriented marine restoration. Adult/general-audience monetization ONLY after age/category confirmation; no ads shown to underage audiences by default. **Proof:** provider/version pin, positive/negative sandbox device tests, privacy/age assertions, SHA + GitHub commit, Drive Codex log/audit evidence and owner approval for production.
@@ -261,4 +261,4 @@
 ## First eligible handoff
 - Only AFTER ENGINE and FACTORY v1.0 PASS: prepare Drive prompt + audit criteria for COR-G00-001..008, then delegate implementation to Codex.
 
-_Detailed plan: 13 milestones, 130 tasks (19 reference-adoption tasks added), all new tasks PLANNED/GATED; Engine ENG-M24 and Factory LFX-M14 are required before game coding._
+_Detailed plan: 13 milestones, 130 tasks (19 reference-adoption tasks added), all new tasks PLANNED/GATED; Engine ENG-M24, Level Factory LFX-M14, and Visual-UI-Factory VUF-M11 are required before game coding._
