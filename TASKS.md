@@ -1,5 +1,20 @@
 # Coral_Rescue | MASTER TASKS.md
 
+## 2026-11-10 | OWNER OVERRIDE: CLAUDE-ONLY EXECUTION UNDER MATCH3 MASTER ORCHESTRATOR
+
+**Effective immediately, the owner assigns Claude Code exclusive AI execution authority for this game repository.** `Sekiph82/MATCH3-MASTER-ORCHESTRATOR` is the central scheduling and cross-repository coordination authority once available. Its game specialist dispatches work here; a separate Claude read-only QA specialist independently reviews acceptance. The owner retains final decisions and can expressly override instructions.
+
+- **Claude Code only:** task selection as delegated by the master, source/config edits, tests, defect repairs, work reports, approved GitHub commits/PRs, and maintenance of this repository's *existing root TASKS.md*. Codex and ChatGPT do not independently implement, approve, assign, or change task state. Other automated executors are not authorized.
+- **Existing tasks preserved:** every preexisting checkbox, milestone, requirement, deliverable, dependency, evidence requirement, and blocker remains as written. Do not claim an untested task done; no checklist advancement or PASS without original evidence and a different read-only Claude reviewer. If independent verification cannot run, record NOT_VERIFIED/BLOCKED, not PASS.
+- **Historical supersession:** older sections below that mandate ChatGPT preparation/audit/task editing, Codex implementation, Codex-only Drive log names, or waiting for a per-task ChatGPT handoff are historical *actor/workflow assignments* and no longer control execution. Their technical acceptance, documentation provenance, legal/commercial approvals, release gates and security restrictions still apply.
+- **Dependencies:** actual Engine ENG-M24, Level Factory LFX-M14, Visual Factory VUF-M11 acceptance gates remain in force. The master must schedule independent preparation work without pretending blocked integrations or game releases have passed.
+- **Safety:** no GitHub Actions/paid CI, cloud spend, unapproved real external services, destructive cleanup, force pushes, owner-file overwrites, store publication or monetization changes. Preserve local uncommitted/untracked work; never assume GitHub is ahead of owner's working checkout.
+- **Coordination:** claim tasks through the master to avoid duplicate work. For each handoff report exact task IDs, repo/ref/commit, changed files, actual tests and results, evidence locations, dependencies, blockers and next step. Do not create a parallel task ledger in this repository.
+- **No artificial release:** source-only work may continue where safe, but native device acceptance, independent audits, certified game integration and release stay BLOCKED until their real gates pass.
+
+Read root `CLAUDE.md` and this full `TASKS.md` before any work. The master orchestrator's instructions coordinate agents; they cannot waive this repository's actual acceptance gates.
+
+
 ## PERSISTENT OWNER WORKFLOW RULE | MASTER MILESTONE / DRIVE HANDOFF | 2026-10-12
 - **Primary goal:** finish robust, fast, Unity-6.6-compatible, runnable code with minimal new implementation. Search for mature reusable source/components first; pin released commits/tags; adopt only needed functions/adapters. Do not rewrite a stable existing solution simply for novelty. Prefer tested permissive licensed MIT/BSD/Apache code with retained notices, but verify LICENSE and per-file asset/dependency rights; visible GitHub source with no license is NOT automatically reusable. Commercially restricted / CC BY-NC-ND projects are behavior references only, to be independently implemented.
 - **ONE MASTER HANDOFF PER MILESTONE:** ChatGPT prepares a versioned implementation prompt and an independent master audit rubric in Google Drive, PLUS separately titled PROMPT and AUDIT CRITERIA for EACH numbered subtask, before Codex begins. Master prompt enumerates and links all children and demands continuous implementation within that milestone without waiting for approval between successful children. Failure/blocker protocols remain mandatory.
