@@ -290,3 +290,10 @@ Read root `CLAUDE.md` and this full `TASKS.md` before any work. The master orche
 - Only AFTER ENGINE and FACTORY v1.0 PASS: prepare Drive prompt + audit criteria for COR-G00-001..008, then delegate implementation to Codex.
 
 _Detailed plan: 13 milestones, 130 tasks (19 reference-adoption tasks added), all new tasks PLANNED/GATED; Engine ENG-M24, Level Factory LFX-M14, and Visual-UI-Factory VUF-M11 are required before game coding._
+
+## Codex ImageGen V3 integration (owner directive; open)
+
+- [ ] **IMG-V3-01 — Repository integration:** Use Coral Rescue ocean style profile and existing 28-screen inventory; generate six readable piece silhouettes, boosters, ocean backgrounds and modular UI; import only via Visual Factory approved catalog.
+- [ ] **IMG-V3-02 — Provider and safety:** Use global `codex-imagegen` local Windows CLI with owner's authenticated ChatGPT session only. No paid API fallback, no GitHub Actions, no secret logging. Detect unavailable CLI/auth/quota and stop safely. Use one shared persistent queue, bounded retries, exact request hashes, atomic outputs, explicit project routing and short Claude summaries. Never overwrite approved assets.
+- [ ] **IMG-V3-03 — Verification:** Read existing project contracts first; implement with tests for wrong-project routing, duplicate assets, failures and interrupted runs. Run real local Codex smoke test and application visual QA with screenshots; report exact SHA, test results and remaining blockers. Do not mark READY without required approval or claim live tests from mocks.
+- [ ] **IMG-V3-04 — Handoff:** Update this tracker after every cycle; commit/push verified changes and synchronize local checkout. Continue independent tasks autonomously; record genuine owner/credential/hardware blockers, no fabricated PASS.
